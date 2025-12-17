@@ -10,7 +10,6 @@ html {
 
 .page {
   margin: 0 auto;
-  padding: 98px 30px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -20,7 +19,10 @@ html {
   display: flex;
   flex-direction: column;
   min-block-size: 100vh;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 h1,
@@ -53,8 +55,7 @@ ol {
   display: flex;
   align-self: end;
   flex-direction: column;
-  gap: 125px;
-  align-self: flex-start;
+  gap: 16px;
 }
 
 .result__video {
@@ -157,9 +158,6 @@ ol {
   block-size: 15px;
 }
 
-.search-form__pseudo-checkbox:hover {
-  text-decoration: underline;
-}
 
 .search-form__pseudo-checkbox:focus {
   outline: 1px solid #ffffff;
@@ -171,7 +169,6 @@ ol {
   font-size: 75px;
   line-height: 70.5px;
   text-transform: uppercase;
-  margin-top: 37px;
 }
 
 .content__accent {
@@ -218,11 +215,11 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit: contain;
+  object-position: center;
 }
 
-.result__video-container {
-  top: 112px;
-}
+
 
 .result__video-container,
 .content__list {
@@ -269,6 +266,7 @@ ol {
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-inline-size: 200px;
 }
 
 .content__video-card-description {
